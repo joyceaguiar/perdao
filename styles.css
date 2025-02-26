@@ -1,0 +1,114 @@
+.hidden {
+    display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fbeaff; /* Fundo mais suave */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    transition: background-color 1s ease;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #ff7aa2; /* Cor mais suave de rosa */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    color: #5e4b56; /* Cor de texto suave */
+}
+
+button {
+    background-color: #ff98b1; /* Cor rosa claro */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff3385; /* Cor mais forte de rosa para hover */
+    transform: scale(1.1);
+}
+
+
+
+
+#message {
+    font-size: 20px;
+    color: #ff7aa2; /* Cor suave de rosa */
+    font-family: 'Pacifico', cursive;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.heart-container {
+    margin-bottom: 20px;
+}
+
+.heart {
+    width: 60px;
+    animation: heartBeat 1.5s infinite;
+    transition: transform 0.3s ease;
+}
+
+#responseButtons {
+    margin-top: 30px;
+}
+
+#yesButton {
+    background-color: #6aff66; /* Cor verde menta para "Sim" */
+}
+
+#noButton {
+    background-color: #ffb3b3; /* Cor rosa suave para "Não" */
+}
+
+#responseMessage {
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Animação do coração */
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
